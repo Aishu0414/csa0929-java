@@ -1,0 +1,28 @@
+class Main {
+    public static void main(String[] args) {
+        int t_p = 36, t_q = 5,t;
+        t = t_p*t_q;
+        System.out.println("TOMATO : 1Kg = 36");
+        System.out.println("TOTAL COST OF TOMATO:"+t);
+        double r_p = 45.5,r;
+        int r_q = 2;
+        r = r_p*r_q;
+        System.out.println("RICE : 1Kg = 45.50");
+        System.out.println("TOTAL COST OF RICE:"+r);
+        int o_p = 20,o_q = 5,o;
+        o = o_p*o_q;
+        System.out.println("ONION : 1Kg = 20");
+        System.out.println("TOTAL COST OF ONION:"+o);
+        double Grand_total = t+r+o;
+        System.out.println("GRAND TOTAL:"+Grand_total);
+        if(Grand_total>300){
+            double dis = 0.5;
+            double discount = Grand_total*dis;
+            System.out.println("DISCOUNT AMOUNT:"+discount);
+            double final_amount =  Grand_total-discount;
+            System.out.println("FINAL AMOUNT:"+Math.round(final_amount));
+        }else{
+            System.out.println("GRAND TOTAL:"+Grand_total);
+        }
+    }
+}
